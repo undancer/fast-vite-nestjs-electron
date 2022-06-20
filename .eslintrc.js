@@ -28,6 +28,7 @@ const config = {
       rules: {
         'no-useless-call': 'off',
         'no-console': 'off',
+        '@typescript-eslint/brace-style': ['error', '1tbs'],
         '@typescript-eslint/consistent-type-imports': 'off',
       },
     },

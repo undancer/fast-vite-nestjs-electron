@@ -6,16 +6,12 @@ import { AppModule } from './app.module'
 
 async function bootstrap() {
   try {
-    const nestApp = await NestFactory.createMicroservice<MicroserviceOptions>(
-      AppModule,
-      {
-        strategy: new ElectronIpcTransport(),
-      },
-    )
+    const nestApp = await NestFactory.createMicroservice<MicroserviceOptions>(AppModule, {
+      strategy: new ElectronIpcTransport(),
+    })
 
     await nestApp.listen()
-  }
-  catch (error) {
+  } catch (error) {
     console.log(error)
     app.quit()
   }

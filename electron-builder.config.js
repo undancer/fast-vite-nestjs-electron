@@ -10,7 +10,7 @@ const config = {
   npmRebuild: false,
   buildDependenciesFromSource: true,
   electronDownload: {
-    mirror: 'https://npm.taobao.org/mirrors/electron/',
+    mirror: 'https://npmmirror.com/mirrors/electron/',
   },
   files: [
     'dist/main/**/*',

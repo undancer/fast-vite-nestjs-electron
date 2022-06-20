@@ -18,7 +18,7 @@
     ],
     "types": [
       "vite/client",
-      "./packages/preload"
+      "./packages/preload/src"
     ],
     "paths": {
       "@renderer/*": [
